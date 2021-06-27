@@ -10,11 +10,16 @@ def printname():
 		id = r["server"]["_id"]
 		
 		clear()
-		print('Where do you want to upload the datapack? (directory path, path MUST start with \'/\')')
-		path = input()
+		print('What is the name of the world?')
+		wname = input()
+		
+		clear()
+		print('What is the name of the datapack? (any name)')
+		dname = input()
+		path = "/" + wname + "/datapacks/" + dname
 
 		clear()
-		print('Where is this datapack? (directory path)')
+		print('Where is the datapack? (directory path)')
 		upload = input()
 
 		clear()
